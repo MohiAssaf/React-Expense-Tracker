@@ -28,11 +28,16 @@ function App() {
         amount: 450,
         date: new Date(2021, 5, 12),
     },
-];
+  ]
+
+  const addExpenseHnadler = expense =>{
+    console.log('app.js');
+    console.log(expense);
+  }
 
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHnadler}/>
       <Expenses items={expenses}/>
     </div>
   );
