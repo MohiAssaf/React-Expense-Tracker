@@ -30,7 +30,7 @@ function App() {
     },
   ]
 
-  const addExpenseHnadler = expense =>{
+  const addExpenseHnadler = (expense) =>{
     console.log('app.js');
     console.log(expense);
   }
