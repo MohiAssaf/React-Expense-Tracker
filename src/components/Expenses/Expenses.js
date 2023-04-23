@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import './Expenses.css'
+
 import ExpenseFilter from "../ExpenseFilter/ExpenseFilter";
 import Card from "../UI/Card";
 import ExpenseList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
+import './Expenses.css'
 
 function Expenses(props) {
 
