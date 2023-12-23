@@ -1,6 +1,9 @@
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from './components/NewExpense/NewExpense';
 import React, {useState} from "react";
+import DeleteExpense from "./components/DeleteExpense/DeleteExpense";
+
+
 
 const DUMMY_EXPENSES = [
   {
@@ -38,9 +41,14 @@ function App() {
     })
   }
 
+  const deleteExpenseHandler = () =>{
+
+  }
+
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHnadler}/>
+      <DeleteExpense onDeleteExpense={deleteExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
